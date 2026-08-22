@@ -1,21 +1,20 @@
 # Build guide
 
-Build setup, current toolchain versions, and known issues for the Android and iOS builds.
+Build setup, current toolchain versions, and known issues for the Android build.
 
 ## Prerequisites
 
 - Flutter 3.38+ / Dart SDK `>=3.5.0 <4.0.0` (`flutter doctor` should show no blockers)
-- Android: Android Studio or the command-line SDK, JDK 17
-- iOS: macOS + Xcode (CocoaPods installed)
+- Android Studio or the command-line SDK, JDK 17
 
 ## First-time platform files
 
-`android/` and `ios/` are checked in, but if either is missing or incomplete (a fresh clone can
-lack `ios/Runner.xcodeproj`, `ios/Podfile`, etc.):
+`android/` is checked in, but if it's missing or incomplete (a fresh clone can lack generated
+Gradle files):
 
 ```bash
 cd mobileApp
-flutter create . --project-name quantumchat --org labs.quantumlogics --platforms android,ios
+flutter create . --project-name quantumchat --org labs.quantumlogics --platforms android
 ```
 
 This regenerates platform scaffolding only — it does not touch `lib/`.
@@ -68,16 +67,6 @@ slow/unreliable downloads of the ~200 MB Gradle distribution on some machines. T
 machine-specific — if that path doesn't exist on your machine, either download the matching
 Gradle zip yourself and update the path, or point `distributionUrl` back at the standard
 `https://services.gradle.org/distributions/gradle-8.12-all.zip`.
-
-## iOS
-
-```bash
-cd mobileApp
-flutter build ios --release   # or open ios/Runner.xcworkspace in Xcode after `pod install`
-```
-
-Set the bundle identifier and signing team in Xcode (`ios/Runner.xcworkspace` → Runner target →
-Signing & Capabilities) before archiving.
 
 ## Troubleshooting
 

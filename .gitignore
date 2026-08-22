@@ -27,26 +27,6 @@ android/key.properties
 **/*.keystore
 **/*.jks
 
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-ios/Flutter/Generated.xcconfig
-ios/Flutter/ephemeral/
-ios/Flutter/app.flx
-ios/Flutter/app.zip
-ios/Flutter/flutter_assets/
-ios/Flutter/flutter_export_environment.sh
-ios/ServiceDefinitions.json
-ios/Runner/GeneratedPluginRegistrant.*
-ios/.generated/
-ios/Pods/
-ios/.symlinks/
-**/xcuserdata/
-**/*.xcuserstate
-**/.llbuild/
-**/.build/
-
-
-
 .env
 .env.local
 *.lock

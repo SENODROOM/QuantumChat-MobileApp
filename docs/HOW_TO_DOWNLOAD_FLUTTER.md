@@ -43,8 +43,8 @@ flutter --version
 flutter doctor
 ```
 
-`flutter doctor` should show no blockers for the platforms you're building. It will also flag
-missing Android SDK / Xcode / CocoaPods pieces — install what it points at.
+`flutter doctor` should show no blockers for Android. It will also flag missing Android SDK
+pieces — install what it points at.
 
 Android Studio isn't required if you already have the Android SDK and command-line tools
 installed and `ANDROID_SDK_ROOT`/`ANDROID_HOME` set; `flutter doctor` will tell you if it can't
@@ -70,7 +70,7 @@ flutter pub get
 ```
 
 Then continue with the [README](../README.md) to run the app, or [BUILD.md](BUILD.md) for
-Android/iOS toolchain setup and known build issues.
+Android toolchain setup and known build issues.
 
 ## Switching Flutter versions
 

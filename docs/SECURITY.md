@@ -38,8 +38,8 @@ non-destructive PoCs.
 
 ## Key handling
 
-- Keys are generated on-device and stored via `flutter_secure_storage` (Keystore on Android,
-  Keychain on iOS) — see `lib/crypto/key_storage.dart`.
+- Keys are generated on-device and stored via `flutter_secure_storage` (Android Keystore) — see
+  `lib/crypto/key_storage.dart`.
 - `keys.txt` is shown once at signup as a manual backup; it is not retained by the app after the
   unlock/import flow completes.
 - Login never generates new keys. A device without a matching keyring must import `keys.txt` or

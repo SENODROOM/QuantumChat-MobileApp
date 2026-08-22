@@ -1,6 +1,6 @@
 # Contributing to QuantumChat Mobile
 
-Thanks for contributing to the QuantumChat Flutter client for Android and iOS. It talks to the
+Thanks for contributing to the QuantumChat Flutter client for Android. It talks to the
 same backend as the web app and holds the same client-side X25519 / NaCl keyring: private keys
 never leave the phone.
 
@@ -9,7 +9,7 @@ never leave the phone.
 1. Read [`docs/REQUIREMENTS.md`](https://github.com/QuantumLogicsLabs/QuantumChat/blob/main/docs/REQUIREMENTS.md) (E2E X5 rules).
 2. Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 3. Report vulnerabilities via [SECURITY.md](SECURITY.md), not public issues.
-4. For Gradle/Xcode toolchain setup and known build issues, see [BUILD.md](BUILD.md).
+4. For Gradle toolchain setup and known build issues, see [BUILD.md](BUILD.md).
 
 ## Development setup
 
@@ -45,7 +45,7 @@ Do not introduce:
 1. Keep changes focused.
 2. Preserve client-held keys and X5 sealed-box behavior — the server should never need plaintext.
 3. Add or update a test in `test/` when touching `lib/crypto/`.
-4. Note any platform-specific setup a reviewer needs (Android SDK, Xcode) in the PR description —
+4. Note any platform-specific setup a reviewer needs (Android SDK version, etc.) in the PR description —
    there's no CI configured on this repo yet, so builds are verified locally.
 
 ## License

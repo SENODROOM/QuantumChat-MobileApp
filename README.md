@@ -1,6 +1,6 @@
 # QuantumChat — Mobile
 
-Native Flutter messenger for Android and iOS. It talks to the same QuantumChat backend as the web app and uses the same client-side X25519 / NaCl sealed-box encryption: private keys never leave the phone.
+Native Flutter messenger for Android, built for Play Store distribution. It talks to the same QuantumChat backend as the web app and uses the same client-side X25519 / NaCl sealed-box encryption: private keys never leave the phone.
 
 ## What it includes
 
@@ -20,14 +20,14 @@ Calls, stories, QuantumAI, and attachments are not in this first mobile cut — 
 
 ## First-time platform files
 
-If `android/` or `ios/` are missing or incomplete:
+If `android/` is missing or incomplete:
 
 ```bash
 cd mobileApp
-flutter create . --project-name quantumchat --org labs.quantumlogics --platforms android,ios
+flutter create . --project-name quantumchat --org labs.quantumlogics --platforms android
 ```
 
-That fills in Gradle / Xcode scaffolding without replacing `lib/`.
+That fills in Gradle scaffolding without replacing `lib/`.
 
 ## Run
 
@@ -37,7 +37,7 @@ flutter pub get
 flutter run
 ```
 
-See [docs/RUN.md](docs/RUN.md) for emulator/simulator/device specifics, API URL configuration
+See [docs/RUN.md](docs/RUN.md) for emulator/device specifics, API URL configuration
 (`10.0.2.2` vs `localhost` vs LAN IP), and running against the production backend.
 
 ## Encryption (same as web)

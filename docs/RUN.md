@@ -1,7 +1,7 @@
 # Running the app
 
 Assumes Flutter is installed ([HOW_TO_DOWNLOAD_FLUTTER.md](HOW_TO_DOWNLOAD_FLUTTER.md)) and, if
-`android/`/`ios/` are missing or incomplete, that you've run `flutter create .` per the
+`android/` is missing or incomplete, that you've run `flutter create .` per the
 [README](../README.md#first-time-platform-files).
 
 ## 1. Start the backend
@@ -33,15 +33,6 @@ flutter run
 The app's default API URL is `http://10.0.2.2:5000` — the emulator's alias for the host
 machine's `localhost`. Change it in Settings → Server if your backend runs elsewhere.
 
-### iOS simulator (macOS only)
-
-```bash
-open -a Simulator
-flutter run
-```
-
-Default API URL is `http://localhost:5000`.
-
 ### Physical device
 
 ```bash
@@ -65,8 +56,8 @@ Vercel hosting has no Socket.IO — the app falls back to REST polling against t
 ## Hot reload / restart
 
 With `flutter run` attached: `r` for hot reload, `R` for hot restart, `q` to quit. Hot reload
-won't pick up changes to `main.dart` bootstrapping (storage/auth/theme init) or native
-(Android/iOS) code — use hot restart or re-run for those.
+won't pick up changes to `main.dart` bootstrapping (storage/auth/theme init) or native Android
+code — use hot restart or re-run for those.
 
 ## Troubleshooting
 
